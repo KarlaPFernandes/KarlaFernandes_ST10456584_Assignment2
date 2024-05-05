@@ -93,7 +93,7 @@
         android:id="@+id/puppyView"
         android:layout_width="569dp"
         android:layout_height="518dp"
-        android:layout_marginBottom="324dp"
+        android:layout_marginBottom="304dp"
         android:background="@drawable/untitled_project"
         android:contentDescription="TODO"
         android:src="@drawable/untitled_project"
