@@ -4,30 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CF7070"
+    android:background="@color/gold"
     tools:context=".Code2">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/feedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="690dp" />
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/feedButton"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/hungerView"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/cleanButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="350dp"
-        tools:layout_editor_absoluteY="688dp" />
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/cleanButton"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cleanView"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="586dp"
-        tools:layout_editor_absoluteY="684dp" />
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="@color/pink"
+        android:text="@string/playButton"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/happyView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/hungerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/hungerView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/cleanView"
+        app:layout_constraintEnd_toStartOf="@+id/hungerCount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cleanView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/cleanView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/happyView"
+        app:layout_constraintEnd_toStartOf="@+id/cleanCount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/happyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/happyView"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/happyCount"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/puppyView"
+        android:layout_width="569dp"
+        android:layout_height="518dp"
+        android:layout_marginBottom="324dp"
+        android:background="@drawable/untitled_project"
+        android:contentDescription="TODO"
+        android:src="@drawable/untitled_project"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/hungerCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/feedCount"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/cleanCount"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/cleanCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/cleanCount"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/happyCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cleanButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/happyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="56dp"
+        android:text="@string/playCount"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playButton"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

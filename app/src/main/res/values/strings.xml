@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Imad- Assignment2</string>
+    <string name="startButton">Get Started</string>
+    <string name="textView">Welcome to Lilly</string>
+    <string name="textView2">Your Tamagotchi App </string>
+    <string name="feedButton">Feed</string>
+    <string name="cleanButton">Clean</string>
+    <string name="playButton">Play</string>
+    <string name="hungerView">Hunger</string>
+    <string name="cleanView">Clean</string>
+    <string name="happyView">Happy</string>
+    <string name="feedCount"></string>
+    <string name="cleanCount"></string>
+    <string name="playCount"></string>
+
+
 </resources>
