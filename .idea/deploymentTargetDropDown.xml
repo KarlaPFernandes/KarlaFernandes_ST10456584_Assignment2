@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="Code2ActivityTest">
+        <State />
+      </entry>
       <entry key="app">
         <State>
           <targetSelectedWithDropDown>
@@ -17,6 +20,12 @@
           </targetSelectedWithDropDown>
           <timeTargetWasSelectedWithDropDown value="2024-04-28T16:58:13.027652800Z" />
         </State>
+      </entry>
+      <entry key="testCleanButton()">
+        <State />
+      </entry>
+      <entry key="testFeedButton()">
+        <State />
       </entry>
     </value>
   </component>
