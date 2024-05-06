@@ -11,7 +11,9 @@ The Tamagotchi app is a virtual pet simulation inspired by the popular 1990s toy
 - Real-time updates of the pet's health, hunger, and cleanliness status.
 
 Language: Kotlin
+
 Development inviroment: Android Studio
+
 Git Clone https://github.com/KarlaPFernandes/KarlaFernandes_ST10456584_Assignment2.git
 -------------------------------------------------
 Open the Project in Android Studio
